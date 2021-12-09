@@ -12,16 +12,17 @@ public class Win {
         return rsl;
     }
 
-    public static boolean monoHorizontal(int board[][], int row){
+    public static boolean monoHorizontal(int[][] board, int row) {
         boolean rsl = true;
         for (int column = 0; column < board.length; column++) {
-            if(board[row][column] != 1) {
+            if (board[row][column] != 1) {
                 rsl = false;
                 break;
             }
         }
         return rsl;
     }
+
     public static boolean check(int[][] board) {
         boolean rsl = false;
         for (int i = 0; i < board.length; i++) {
