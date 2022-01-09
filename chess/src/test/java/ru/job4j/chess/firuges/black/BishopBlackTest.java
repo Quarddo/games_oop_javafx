@@ -2,12 +2,14 @@ package ru.job4j.chess.firuges.black;
 
 import junit.framework.TestCase;
 import org.junit.Test;
+import ru.job4j.chess.Logic;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.Figure;
+import static org.junit.Assert.*;
 
 import javax.swing.text.Position;
 
-public class BishopBlackTest extends TestCase {
+public class BishopBlackTest {
 
     @Test
     public void whenTestPosition() {
@@ -23,7 +25,7 @@ public class BishopBlackTest extends TestCase {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         Figure expected = bishopBlack.copy(Cell.A1);
         Cell actual = expected.position();
-        assertEquals(expected, actual);
+        assertEquals(Cell.A1, actual);
     }
 
     @Test
